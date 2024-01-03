@@ -1,37 +1,35 @@
-<!DOCTYPE html>
+{% extends 'core/base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
-    <link href="{% static 'core/css/all.min.css' %}" rel="stylesheet" type="text/css">
-</head>
-<body>
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/profile.png' %}" alt="Profile"
+             class="img-thumbnail"
+             width="200px" height="150px">
+    </div>
+    <div class="mt-5 text-white mx-5">
+        <h1 style="font-family: Algerian">Hello,</h1>
+        <div class="px-4" style="line-height: 2rem;">
+            <p style="text-indent: 100px;">I am <b class=" text-warning"> NAME </b> having 5 years of full-stack web
+                development experience for global businesses, I offer the technical expertise you are seeking for your
+                web
+                developer position.
+            </p>
 
-<div class="container-fluid bg-dark text-white">
-    <div class="row">
-        <div class="col-sm-2">
-            <div class="border-right border-warning h-100">
-                <div class="text-center">
-                    <img src="{% static 'core/images/profile.png' %}" alt="Profile" class="img-fluid rounded-circle mt-5"
-                         width="100px" height="100px">
-                </div>
-                <nav class="nav flex-column text-center">
-                    <a class="nav-link active" href="{% url 'home' %}">Home</a>
-                    <a class="nav-link" href="">Services</a>
-                    <a class="nav-link" href="">Skills</a>
-                    <a class="nav-link" href="">Contact</a>
-                </nav>
-            </div>
+            <p>Since earning my bachelor's degree in internet and web development from XYZ University, I have served as
+                a web developer at <b class="text-warning"> XYZ Technologies</b>, one of biggest premier digital
+                marketing and web development firm. In this position, I have led web development projects for clients in
+                diverse industries including technology, manufacturing, pharmaceutical,
+                hospitality, retail and financial services.
+            </p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sapiente reiciendis numquam optio?
+                Enim eligendi quae ducimus ipsam consectetur dicta veritatis sunt. Pariatur vel modi alias eum ducimus
+                nam temporibus.
+            </p>
         </div>
     </div>
+    <div class="text-center"><a class="btn btn-outline-warning my-3 mr-5" href="">Contact Me</a></div>
 </div>
-
-
-<script src="{% static 'core/js/jquery.js' %}"></script>
-<script src="{% static 'core/js/popper.js' %}"></script>
-<script src="{% static 'core/js/bootstrap.js' %}"></script>
-<script src="{% static 'core/js/all.min.js' %}"></script>
-</body>
-</html>
+{% endblock content %}
+```

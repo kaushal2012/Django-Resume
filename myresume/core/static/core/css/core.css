@@ -1,0 +1,18 @@
+html,
+body {
+    height: 100%;
+}
+
+.container-fluid {
+    min-height: 100%;
+}
+
+/* Service icon color */
+.i-color {
+    color: lightgray;
+}
+
+/* Service subtitle color */
+.ss-color {
+    color: grey;
+}
