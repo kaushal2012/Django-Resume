@@ -1,0 +1,68 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+{% block title %}Contact{% endblock title %}
+
+{% block content %}
+<div class="container px-4 mt-5" style="margin-top: 57px">
+    <h2 class="pb-2 mb-4 text-warning border-bottom border-warning">Contact Us</h2>
+
+    <div class="row mb-5">
+        <p class="h5 mx-auto mb-5">
+            Do you have any questions? Please do not hesitate to contact us directly.
+            We'll get back to you promptly to assist you.
+        </p>
+
+        <div class="col-sm-9 mb-5">
+            <form>
+                <div class="form-row">
+                    <div class="form-floating col-md-6 mb-3 ss-color">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="First and Last Name">
+                        <label for="floatingInput">Name *</label>
+                    </div>
+
+                    <div class="form-floating col-md-6 mb-3 ss-color">
+                        <input type="email" class="form-control" id="floatingInput1" placeholder="name@example.com">
+                        <label for="floatingInput1">Email address</label>
+                    </div>
+
+                    <div class="form-floating col-12 mb-3 ss-color">
+                        <textarea class="form-control" placeholder="Mention your subject" id="floatingTextarea"
+                                  rows="4"></textarea>
+                        <label for="floatingTextarea">Subject</label>
+                    </div>
+
+                    <div class="overflow-auto">
+                        <div class="form-floating col-12 mb-3 ss-color">
+                        <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea1"
+                                  style="height: 100px"></textarea>
+                            <label for="floatingTextarea1">Message</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-outline-warning my-3 mr-5" type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="col-sm-3 text-center">
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fas fa-map-marker-alt fa-1x ss-color"></i>
+                    <p>Ahmedabad, Gujarat, India</p>
+                </li>
+
+                <li>
+                    <i class="fas fa-phone mt-4 fa-1x ss-color"></i>
+                    <p>+91 1234567890</p>
+                </li>
+
+                <li>
+                    <i class="fas fa-envelope mt-4 fa-1x ss-color"></i>
+                    <p>contact@email.com</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

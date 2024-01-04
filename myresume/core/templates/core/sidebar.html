@@ -11,13 +11,17 @@
     </div>
 
     <nav class="nav flex-column text-center">
-        <a href="{% url 'home' %}" class="nav-link active" style="border-bottom: white">
+        <a href="{% url 'home' %}" class="nav-link {{home}}">
             <i class="fa-solid fa-house" style="color: white;"></i>Home</a>
-        <a class="nav-link active" href="{% url 'services' %}">
-            <i class="fa-solid fa-globe" style="color: white;"></i></i>Services</a>
-        <a class="nav-link" href="{% url 'skills' %}">
+
+        <a href="{% url 'services' %}" class="nav-link {{services}}">
+            <i class="fa-solid fa-globe" style="color: white;"></i>Services</a>
+
+        <a href="{% url 'skills' %}" class="nav-link {{skills}}">
             <i class="fa-solid fa-plus" style="color: white;"></i>Skills</a>
-        <a class="nav-link" href="">
+
+        <a href="{% url 'contact' %}" class="nav-link {{contact}}">
             <i class="fa-solid fa-envelope" style="color: white;"></i>Contact</a>
     </nav>
 </div>
+```
