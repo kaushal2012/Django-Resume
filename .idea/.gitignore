@@ -13,3 +13,5 @@
 # Ignore XML files
 *.xml
 /Django-Resume.iml
+# GitHub Copilot persisted chat sessions
+/copilot/chatSessions
