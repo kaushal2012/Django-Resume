@@ -1,0 +1,27 @@
+{% load static %}
+
+<div class="border-end border-warning h-100">
+    <div class="border-bottom border-light w-auto text-center">
+        <img src="{% static 'core/images/profile.png' %}" alt="Profile"
+             class="img-fluid rounded-circle mt-5"
+             width="100px" height="100px">
+
+        <h5 class="mt-3">NAME</h5>
+
+    </div>
+
+    <nav class="nav flex-column text-center">
+        <a href="{% url 'home' %}" class="nav-link {{home}}">
+            <i class="fa-solid fa-house" style="color: white;"></i>Home</a>
+
+        <a href="{% url 'services' %}" class="nav-link {{services}}">
+            <i class="fa-solid fa-globe" style="color: white;"></i>Services</a>
+
+        <a href="{% url 'skills' %}" class="nav-link {{skills}}">
+            <i class="fa-solid fa-plus" style="color: white;"></i>Skills</a>
+
+        <a href="{% url 'contact' %}" class="nav-link {{contact}}">
+            <i class="fa-solid fa-envelope" style="color: white;"></i>Contact</a>
+    </nav>
+</div>
+```
